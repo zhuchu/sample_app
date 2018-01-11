@@ -26,5 +26,9 @@
   </table>
 
   <br>
+  <% if user_signed_in? %>
+  <%= link_to 'New Tweet', new_tweet_path %>
+  <%else%>
   <%= link_to 'Create your own tweet', new_tweet_path %>
+  <% end %>
 </div>
